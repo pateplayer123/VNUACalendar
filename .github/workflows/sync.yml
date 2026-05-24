@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install deps
-        run: pip install requests icalendar
+        run: pip install requests icalendar pytz
       - name: Run scraper
         env:
           SCHOOL_USER: ${{ secrets.SCHOOL_USER }}
