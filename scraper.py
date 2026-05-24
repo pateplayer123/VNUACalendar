@@ -5,8 +5,11 @@ pip install requests icalendar
 
 import os, json, base64, uuid
 import requests
+import pytz
 from datetime import datetime
 from icalendar import Calendar, Event
+
+TZ = pytz.timezone("Asia/Ho_Chi_Minh")
 
 BASE_URL = "https://daotao.vnua.edu.vn"
 USERNAME = os.environ.get("SCHOOL_USER", "")
