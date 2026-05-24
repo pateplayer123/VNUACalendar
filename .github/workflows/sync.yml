@@ -32,6 +32,6 @@ jobs:
         run: |
           git config user.email "github-actions@github.com"
           git config user.name  "GitHub Actions"
-          git add docs/schedule.ics
+          git add docs/schedule.ics docs/exams.ics
           git diff --cached --quiet && echo "No changes" || git commit -m "🔄 Update schedule $(date '+%Y-%m-%d')"
           git push
