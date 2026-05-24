@@ -151,6 +151,7 @@ def build_exam_ics(data):
         ds = list(ds.values())[0]
 
     for thi in ds:
+        print("Processing:", thi.get("ten_mon"), thi.get("ngay_thi"))
         try:
             ngay_thi  = thi.get("ngay_thi") or thi.get("ngay")
             gio_bd    = thi.get("gio_bat_dau") or thi.get("gio_thi") or "00:00"
